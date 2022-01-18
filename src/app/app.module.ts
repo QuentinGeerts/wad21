@@ -14,6 +14,7 @@ import { Demo04Component } from './demo/demo04/demo04.component';
 import { Demo05Component } from './demo/demo05/demo05.component';
 import { Demo06Component } from './demo/demo06/demo06.component';
 import { ConvertSecondsToDHMSPipe } from './demo/demo06/convert-seconds-to-dhms.pipe';
+import { PowPipe } from './demo/demo06/pow.pipe';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ConvertSecondsToDHMSPipe } from './demo/demo06/convert-seconds-to-dhms.
     Demo06Component,
     Exo01Component,
     ConvertSecondsToDHMSPipe,
+    PowPipe,
   ],
   imports: [
     BrowserModule,

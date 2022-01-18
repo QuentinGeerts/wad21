@@ -31,4 +31,23 @@
 
 
   </div>
+  
+  <br>
+
+  <div class="row">
+
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Elever un nombre à une puissance
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">La base : {{ varBase }} - La puissance : {{ varPow }}</p>
+          <p class="card-text">Avec le pipe : {{ varBase | pow : varPow }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
