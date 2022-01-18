@@ -1,11 +1,11 @@
-<h1>Demo 01 - Les bindings de propriétés - One Way Binding</h1>
+<h1>Demo 02 - Les bindings de propriétés : Two Way Binding</h1>
 
 
 <div class="container-fluid">
   <div class="row">
     <div class="col-4">
       <div class="card">
-        
+
         <div class="card-header bg-success text-white">
           Binding de String
         </div>
@@ -14,6 +14,7 @@
           <p class="card-text">
             Ma variable "maVariable1" vaut "{{ maVariable1 }}"
           </p>
+          <input type="text" class="form-control" [(ngModel)]="maVariable1">
         </div>
 
       </div>
@@ -21,7 +22,7 @@
 
     <div class="col-4">
       <div class="card">
-        
+
         <div class="card-header bg-success text-white">
           Binding de Number
         </div>
@@ -30,6 +31,8 @@
           <p class="card-text">
             Ma variable "maVariable2" vaut "{{ maVariable2 }}"
           </p>
+
+          <input type="number" class="form-control" [(ngModel)]="maVariable2">
         </div>
 
       </div>
@@ -37,7 +40,7 @@
 
     <div class="col-4">
       <div class="card">
-        
+
         <div class="card-header bg-success text-white">
           Binding de String
         </div>
@@ -46,6 +49,7 @@
           <p class="card-text">
             Ma variable "maVariable3" vaut "{{ maVariable3 }}"
           </p>
+          <input type="checkbox" class="form-check-input" [(ngModel)]="maVariable3">
         </div>
 
       </div>
