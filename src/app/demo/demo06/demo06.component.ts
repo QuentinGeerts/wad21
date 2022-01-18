@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo06Component implements OnInit {
 
+  nbSeconds : number = 90061 // 1 jour 1 heure 1 minute et 1 seconde
+  nbSeconds2 : number = 90120 // 1 jour 1 heure 2 minutes et 0 seconde
+
   constructor() { }
 
   ngOnInit(): void {

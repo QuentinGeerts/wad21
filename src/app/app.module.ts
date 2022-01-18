@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { Demo04Component } from './demo/demo04/demo04.component';
 import { Demo05Component } from './demo/demo05/demo05.component';
 import { Demo06Component } from './demo/demo06/demo06.component';
+import { ConvertSecondsToDHMSPipe } from './demo/demo06/convert-seconds-to-dhms.pipe';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { Demo06Component } from './demo/demo06/demo06.component';
     Demo05Component,
     Demo06Component,
     Exo01Component,
+    ConvertSecondsToDHMSPipe,
   ],
   imports: [
     BrowserModule,
