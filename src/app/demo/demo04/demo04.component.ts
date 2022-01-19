@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Demo04Component implements OnInit {
 
-  isDisabled : boolean = false
+  isEnabled : boolean = false
 
   constructor() { }
 

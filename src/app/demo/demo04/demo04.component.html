@@ -12,11 +12,13 @@
 
         <div class="card-body">
           <p class="card-text">
-            Ma variable "maVariable1" vaut "{{ isDisabled }}"
+            Ma variable "maVariable1" vaut "{{ isEnabled }}"
           </p>
-          <input type="checkbox" class="form-check-input" [(ngModel)]="isDisabled">&nbsp;
-
-          <button class="btn btn-success" [disabled]="isDisabled">Click on me !</button>
+          <div class="form-check mb-3">
+            <label class="form-label" for="btn">Activer le bouton</label>
+            <input type="checkbox" id="btn" class="form-check-input" [(ngModel)]="isEnabled">&nbsp;
+          </div>
+          <button class="btn btn-success" [disabled]="!isEnabled">Click on me !</button>
         </div>
 
       </div>
