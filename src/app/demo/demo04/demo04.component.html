@@ -24,5 +24,36 @@
       </div>
     </div>
 
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Attributes binding
+        </div>
+
+        <div class="card-body">
+          <input type="text" [(ngModel)]="lastname">
+          <input type="text" [(ngModel)]="firstname">
+          <p class="card-text">{{lastname}} {{firstname}}</p>
+          <input type="text" [value]="lastname + ' ' + firstname ">
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Attributes binding
+        </div>
+
+        <div class="card-body">
+          <input type="range" [(ngModel)]="value" [min]="min" [max]="max" [step]="step"> {{value}}
+        </div>
+
+      </div>
+    </div>
+
   </div>
 </div>

@@ -3,9 +3,10 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-4">
+
+    <div class="col-4 mb-3">
       <div class="card">
-        
+
         <div class="card-header bg-success text-white">
           Binding de String
         </div>
@@ -19,9 +20,9 @@
       </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-4 mb-3">
       <div class="card">
-        
+
         <div class="card-header bg-success text-white">
           Binding de Number
         </div>
@@ -35,11 +36,11 @@
       </div>
     </div>
 
-    <div class="col-4">
+    <div class="col-4 mb-3">
       <div class="card">
-        
+
         <div class="card-header bg-success text-white">
-          Binding de String
+          Binding de Boolean
         </div>
 
         <div class="card-body">
@@ -50,5 +51,23 @@
 
       </div>
     </div>
+
+    <div class="col-4 mb-3">
+      <div class="card">
+
+        <div class="card-header bg-success text-white">
+          Binding d'objet
+        </div>
+
+        <div class="card-body">
+          <p class="card-text">
+            Ma variable "person" vaut "{{ person | json }}"
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+
   </div>
 </div>

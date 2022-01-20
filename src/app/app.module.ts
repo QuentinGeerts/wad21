@@ -34,7 +34,7 @@ import { PowPipe } from './demo/demo06/pow.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule // Pour le Two Way Binding
   ],
   providers: [],
   bootstrap: [AppComponent]
