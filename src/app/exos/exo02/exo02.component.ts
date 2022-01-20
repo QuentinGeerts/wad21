@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exo02Component implements OnInit {
 
+  varBase : number = 0
+  varPow : number = 0
+
   constructor() { }
 
   ngOnInit(): void {
