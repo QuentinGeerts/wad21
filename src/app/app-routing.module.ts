@@ -11,6 +11,7 @@ import { Demo08Component } from './demo/demo08/demo08.component';
 import { Demo09Component } from './demo/demo09/demo09.component';
 import { Exo01Component } from './exos/exo01/exo01.component';
 import { Exo02Component } from './exos/exo02/exo02.component';
+import { Exo03Component } from './exos/exo03/exo03.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: "exos", children: [
     { path: "exo01", component: Exo01Component },
     { path: "exo02", component: Exo02Component },
+    { path: "exo03", component: Exo03Component },
   ] }
 ];
 

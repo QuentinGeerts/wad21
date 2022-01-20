@@ -22,6 +22,7 @@ import { Demo08Component } from './demo/demo08/demo08.component';
 import { Demo09Component } from './demo/demo09/demo09.component';
 import { PrepareRenderDirective } from './demo/demo09/prepare-render.directive';
 import { HighlightDirective } from './demo/demo09/highlight.directive';
+import { Exo03Component } from './exos/exo03/exo03.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { HighlightDirective } from './demo/demo09/highlight.directive';
     ConvertTempPipe,
     PrepareRenderDirective,
     HighlightDirective,
+    Exo03Component,
   ],
   imports: [
     BrowserModule,
