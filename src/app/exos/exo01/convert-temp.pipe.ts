@@ -27,7 +27,7 @@ export class ConvertTempPipe implements PipeTransform {
     
     // c : f => calc C°
     if (args[1] == 'f') {
-      return (value - 32 * (5/9)) + ' ' + args[0].toUpperCase() + '°'
+      return ((value - 32) * (5/9)) + ' ' + args[0].toUpperCase() + '°'
     }
     
     return ""
