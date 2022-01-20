@@ -18,6 +18,10 @@ import { PowPipe } from './demo/demo06/pow.pipe';
 import { ConvertTempPipe } from './exos/exo01/convert-temp.pipe';
 import { Exo02Component } from './exos/exo02/exo02.component';
 import { Demo07Component } from './demo/demo07/demo07.component';
+import { Demo08Component } from './demo/demo08/demo08.component';
+import { Demo09Component } from './demo/demo09/demo09.component';
+import { PrepareRenderDirective } from './demo/demo09/prepare-render.directive';
+import { HighlightDirective } from './demo/demo09/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -30,12 +34,16 @@ import { Demo07Component } from './demo/demo07/demo07.component';
     Demo04Component,
     Demo05Component,
     Demo06Component,
+    Demo07Component,
+    Demo08Component,
+    Demo09Component,
     Exo01Component,
+    Exo02Component,
     ConvertSecondsToDHMSPipe,
     PowPipe,
     ConvertTempPipe,
-    Exo02Component,
-    Demo07Component,
+    PrepareRenderDirective,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,
