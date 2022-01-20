@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exo01Component implements OnInit {
 
-  
+  tempUser : number = 0
+  unitUser : string = 'c'
 
   constructor() { }
 

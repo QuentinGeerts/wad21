@@ -15,6 +15,7 @@ import { Demo05Component } from './demo/demo05/demo05.component';
 import { Demo06Component } from './demo/demo06/demo06.component';
 import { ConvertSecondsToDHMSPipe } from './demo/demo06/convert-seconds-to-dhms.pipe';
 import { PowPipe } from './demo/demo06/pow.pipe';
+import { ConvertTempPipe } from './exos/exo01/convert-temp.pipe';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { PowPipe } from './demo/demo06/pow.pipe';
     Exo01Component,
     ConvertSecondsToDHMSPipe,
     PowPipe,
+    ConvertTempPipe,
   ],
   imports: [
     BrowserModule,
