@@ -31,7 +31,6 @@ export class Exo03Component implements OnInit {
     ]
 
     console.log(this.links);
-    
   }
 
   ngOnInit(): void {

@@ -1,0 +1,24 @@
+<h1>Demo 10 - Les Input/Ouput</h1>
+
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Input : Injecter une informatique du parent à l'enfant
+        </div>
+        <div class="card-body">
+          <app-child-input 
+          [messageChild]="messageParent"
+          [colorChild]="colorParent"
+          >
+        </app-child-input>
+          
+        <button class="btn btn-success" (click)="changeColor()">Changer la couleur</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

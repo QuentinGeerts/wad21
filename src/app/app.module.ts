@@ -23,6 +23,8 @@ import { Demo09Component } from './demo/demo09/demo09.component';
 import { PrepareRenderDirective } from './demo/demo09/prepare-render.directive';
 import { HighlightDirective } from './demo/demo09/highlight.directive';
 import { Exo03Component } from './exos/exo03/exo03.component';
+import { Demo10Component } from './demo/demo10/demo10.component';
+import { ChildInputComponent } from './demo/demo10/child-input/child-input.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,8 @@ import { Exo03Component } from './exos/exo03/exo03.component';
     PrepareRenderDirective,
     HighlightDirective,
     Exo03Component,
+    Demo10Component,
+    ChildInputComponent,
   ],
   imports: [
     BrowserModule,
