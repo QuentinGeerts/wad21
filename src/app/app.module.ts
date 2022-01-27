@@ -26,6 +26,7 @@ import { Exo03Component } from './exos/exo03/exo03.component';
 import { Demo10Component } from './demo/demo10/demo10.component';
 import { ChildInputComponent } from './demo/demo10/child-input/child-input.component';
 import { ChildOutputComponent } from './demo/demo10/child-output/child-output.component';
+import { ChildNgcontentComponent } from './demo/demo10/child-ngcontent/child-ngcontent.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ChildOutputComponent } from './demo/demo10/child-output/child-output.co
     Demo10Component,
     ChildInputComponent,
     ChildOutputComponent,
+    ChildNgcontentComponent,
   ],
   imports: [
     BrowserModule,
