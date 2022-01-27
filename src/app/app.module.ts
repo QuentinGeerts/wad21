@@ -31,6 +31,7 @@ import { Exo04Component } from './exos/exo04/exo04.component';
 import { ListeComponent } from './exos/exo04/liste/liste.component';
 import { Demo11Component } from './demo/demo11/demo11.component';
 import { Exo05Component } from './exos/exo05/exo05.component';
+import { ShoppingListComponent } from './exos/exo05/shopping-list/shopping-list.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { Exo05Component } from './exos/exo05/exo05.component';
     ListeComponent,
     Demo11Component,
     Exo05Component,
+    ShoppingListComponent,
   ],
   imports: [
     BrowserModule,

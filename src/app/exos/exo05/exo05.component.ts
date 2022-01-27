@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from './models/article.model';
+import { ShoppingService } from './services/shopping.service';
 
 @Component({
   selector: 'app-exo05',
@@ -7,24 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Exo05Component implements OnInit {
 
-  article : string = ""
+  article: Article = new Article() 
 
-  cart : string[] = []
+  cart: Article[] = []
 
-  constructor() { }
+  constructor(private shoppingService: ShoppingService) { }
 
   ngOnInit(): void {
-    this.cart.push('carotte', 'poire', 'ananas')
-    // console.log('cart :>> ', this.cart) // clo + tab
+    this.cart = this.shoppingService.cart
   }
 
   addToCart() {
-    this.cart.push(this.article)
+    const art = new Article
+    art.label = this.article.label
+    this.shoppingService.addToCart(art)
   }
 
-  // Liée à l'output
-  deleteToCart(index : number) {
-    this.cart.splice(index, 1)
+  deleteToCart(index: number) {
+    this.shoppingService.removeToCart(index)
+  }
+
+  increment(index: number) {
+    this.shoppingService.increaseQuantity(index)
+  }
+
+  decrement(index: number) {
+    this.shoppingService.decreaseQuantity(index)
   }
 
 }
