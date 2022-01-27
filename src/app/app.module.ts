@@ -27,6 +27,8 @@ import { Demo10Component } from './demo/demo10/demo10.component';
 import { ChildInputComponent } from './demo/demo10/child-input/child-input.component';
 import { ChildOutputComponent } from './demo/demo10/child-output/child-output.component';
 import { ChildNgcontentComponent } from './demo/demo10/child-ngcontent/child-ngcontent.component';
+import { Exo04Component } from './exos/exo04/exo04.component';
+import { ListeComponent } from './exos/exo04/liste/liste.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { ChildNgcontentComponent } from './demo/demo10/child-ngcontent/child-ngc
     ChildInputComponent,
     ChildOutputComponent,
     ChildNgcontentComponent,
+    Exo04Component,
+    ListeComponent,
   ],
   imports: [
     BrowserModule,
