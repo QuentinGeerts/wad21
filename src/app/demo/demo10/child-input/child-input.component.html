@@ -4,8 +4,12 @@
       Composant enfant
     </div>
     <div class="card-body">
-      <p class [ngClass]="colorChild">
+      <p [ngClass]="colorChild">
         message du parent : {{ messageChild }}
+      </p>
+
+      <p>
+        Message provenant de l'input du parent : {{ messageInputChild }}
       </p>
     </div>
   </div>

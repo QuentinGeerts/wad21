@@ -6,19 +6,45 @@
     <div class="col-12">
       <div class="card">
         <div class="card-header bg-success text-white">
-          Input : Injecter une informatique du parent à l'enfant
+          Input : Injecter une information du parent à l'enfant
         </div>
         <div class="card-body">
           <app-child-input 
-          [messageChild]="messageParent"
-          [colorChild]="colorParent"
-          >
-        </app-child-input>
-          
-        <button class="btn btn-success" (click)="changeColor()">Changer la couleur</button>
+            [messageChild]="messageParent" 
+            [colorChild]="colorParent" 
+            [messageInputChild]="messageInputParent">
+          </app-child-input>
+
+          <button class="btn btn-success" (click)="changeColor()">Changer la couleur</button>
+          <br>
+          {{ messageInputParent }}
+          <br>
+          <input type="text" class="form-control" [(ngModel)]="messageInputParent">
         </div>
       </div>
     </div>
+
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header bg-success text-white">
+          Output : Injecter de l'enfant au parent
+        </div>
+        <div class="card-body">
+          <app-child-output 
+            (enterChild)="onParent($event)"
+            (leaveChild)="onParent($event)"
+          >
+
+          </app-child-output>
+
+          <p>
+            message provenant de l'enfant : {{ messageByChild }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+
 
   </div>
 </div>

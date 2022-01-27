@@ -25,6 +25,7 @@ import { HighlightDirective } from './demo/demo09/highlight.directive';
 import { Exo03Component } from './exos/exo03/exo03.component';
 import { Demo10Component } from './demo/demo10/demo10.component';
 import { ChildInputComponent } from './demo/demo10/child-input/child-input.component';
+import { ChildOutputComponent } from './demo/demo10/child-output/child-output.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ChildInputComponent } from './demo/demo10/child-input/child-input.compo
     Exo03Component,
     Demo10Component,
     ChildInputComponent,
+    ChildOutputComponent,
   ],
   imports: [
     BrowserModule,

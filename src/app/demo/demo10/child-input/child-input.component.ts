@@ -7,12 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ChildInputComponent implements OnInit {
 
-  @Input() messageChild : string = ""
+  @Input() messageChild? : string = ""
   @Input() colorChild : string = ""
+  @Input() messageInputChild : string
 
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
